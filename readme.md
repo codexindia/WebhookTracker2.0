@@ -111,25 +111,6 @@ curl -X POST https://your-domain.com/webhook/session123 \
 curl -X GET https://your-domain.com/webhook/session123?event=test
 ```
 
-## Development
-
-### Running Tests
-
-```bash
-php artisan test
-# or
-./vendor/bin/pest
-```
-
-### Code Style
-
-```bash
-# Run PHP CS Fixer
-./vendor/bin/pint
-
-# Check code style
-./vendor/bin/pint --test
-```
 
 ### Development Server
 
@@ -154,10 +135,7 @@ APP_NAME="Webhook Tracker"
 APP_URL=http://localhost:8000
 
 # Database
-DB_CONNECTION=sqlite
-
-# Queue (for background processing)
-QUEUE_CONNECTION=database
+DB_CONNECTION=mysql
 
 # Session
 SESSION_DRIVER=database
@@ -242,14 +220,6 @@ CREATE TABLE webhook_events (
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-## Support
-
-For support, please open an issue on GitHub or contact the development team.
-
 ## Changelog
 
 ### Version 2.0
@@ -263,4 +233,3 @@ For support, please open an issue on GitHub or contact the development team.
 
 ---
 
-Built with ❤️ using Laravel, Livewire, and Flux UI
